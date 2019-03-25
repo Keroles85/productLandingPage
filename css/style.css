@@ -1,0 +1,152 @@
+/* Body Section */
+
+  body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #ccc;
+  }
+
+/* Header Section */
+
+  header {
+    background-color: #20262E;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    padding: 1em;
+  }
+
+  #container {
+    max-width: 960px;
+    margin: auto;
+  }
+
+  #container #logo {
+    float: left;
+  }
+
+  #logo img {
+    max-width: 91px;
+    float: left;
+  }
+
+  #nav-bar {
+    float: right;
+  }
+
+  #nav-bar ul {
+    list-style: none;
+  }
+
+  #nav-bar ul li {
+    float: left;
+    padding: 1em 2em 0 2em;
+  }
+
+  #nav-bar ul li a {
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+/* Subscribe Section */
+
+  section#subscribe #container {
+    max-width: 960px;
+    margin: 125px auto 25px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 400px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section#subscribe #container img {
+    max-width: 610px;
+  }
+
+  section#subscribe #newsletter {
+    display: flex;
+    flex-direction: column;
+    background-color: #20262E;
+    color: #fff;
+    box-shadow: 1px 10px 20px rgba(0,0,0,0.19), 1px 6px 6px rgba(0,0,0,0.23);
+    min-height: 50%;
+    min-width: 90%;
+    margin: auto;
+  }
+
+  section#subscribe #newsletter form {
+    margin: auto;
+  }
+
+  section#subscribe #newsletter form > div {
+    margin: 10px;
+  }
+
+/* Brief Section */
+
+  section#brief #container {
+    max-width: 960px;
+    margin: auto;
+    text-align: center;
+  }
+
+  section#brief iframe {
+    width: 560px;
+    height: 315px; 
+  }
+
+/* Media Query Section */
+
+  @media(max-width: 900px) {
+
+    header {
+      padding: 0;
+    }
+
+    #logo img {
+      max-width: 61px;
+      padding: 10px;
+    }
+
+    #nav-bar {
+      margin-top: 30px;
+    }
+
+    #nav-bar ul {
+      margin: 0;
+    }
+
+    #nav-bar ul li {
+      padding: 0 15px 0 0;
+    }
+    
+    #nav-bar ul li a {
+      font-size: 0.9em;
+      font-weight: 400;
+    }
+
+    section#subscribe #container {
+      grid-template-columns:  1fr;
+      width: 100%;
+      margin-top: 9em;
+    }
+
+    section#subscribe #newsletter {
+      margin: 0;
+    }
+
+    section#subscribe #container img {
+      max-width: 100%;
+    }
+
+    section#brief iframe {
+      max-width: 90%;
+    }
+
+  }
+
